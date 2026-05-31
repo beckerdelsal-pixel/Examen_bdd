@@ -41,3 +41,9 @@ DELETE FROM vuelos
 WHERE asientos_disponibles = 0;
 
 drop table vuelos
+
+select * from vuelos
+
+ALTER TABLE vuelos ADD COLUMN destino VARCHAR(100);
+
+UPDATE vuelos SET destino = 'Quito' WHERE destino IS NULL;
